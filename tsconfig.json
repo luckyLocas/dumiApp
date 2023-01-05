@@ -3,6 +3,7 @@
     "jsx": "react",
     "strict": true,
     "skipLibCheck": true,
+    "declaration": true,
     "esModuleInterop": true,
     "baseUrl": "./",
     "paths": {

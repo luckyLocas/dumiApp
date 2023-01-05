@@ -1,36 +1,44 @@
 {
   "name": "jad-quick",
-  "version": "0.0.1",
+  "version": "1.0.7",
   "description": "朗道组件库",
-  "scripts": {
-    "start": "npm run dev",
-    "dev": "dumi dev",
-    "build": "dumi build",
-    "prepare": "husky install && dumi setup"
-  },
-  "authors": [
-    "lichuan"
-  ],
   "license": "MIT",
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
+  "module": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "utils"
+  ],
+  "scripts": {
+    "build": "father build",
+    "dev": "dumi dev",
+    "doc:build": "dumi build",
+    "start": "npm run dev",
+    "test": "father test",
+    "test:coverage": "father test --coverage"
   },
-  "lint-staged": {
-    "*.{md,json}": [
-      "prettier --write --no-error-on-unmatched-pattern"
-    ]
+  "dependencies": {
+    "@ant-design/icons": "^4.8.0",
+    "@ant-design/pro-provider": "^2.2.0",
+    "@ant-design/pro-table": "^3.2.7",
+    "@pansy/react-amap": "^2.15.3",
+    "ant-design": "^1.0.0",
+    "antd": "^5.0.7",
+    "gcoord": "^0.3.2",
+    "react-resizable": "^3.0.4",
+    "styled-components": "^6.0.0-beta.6",
+    "virtualizedtableforantd4": "^1.2.2"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
+    "@types/react-resizable": "^3.0.3",
     "dumi": "^2.0.2",
-    "husky": "^8.0.1",
+    "father": "^4.1.1",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1"
   },
-  "dependencies": {
-    "antd": "^5.0.7"
-  }
+  "authors": [
+    "lichuan"
+  ]
 }
