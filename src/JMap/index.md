@@ -21,11 +21,11 @@ export default () => {
 ### API
 
 | 参数       | 说明               | 类型                                  | 默认值 |
-| ---------- | ------------------ | ------------------------------------- | ------ | --- |
+| ---------- | ------------------ | ------------------------------------- | ------ |
 | disabled   | 禁用状态           | boolean                               | false  |
 | value      | 经纬度值           | Lnglat[]                              | []     |
 | onChange   | 值改变触发的事件   | (value?: Lnglat[]) => void            | -      |
-| height     | 容器高度           | number                                | string | 200 |
+| height     | 容器高度           | number                                | 200 |
 | trigger    | 触发查看按钮       | React.ReactNode                       | -      |
 | center     | 中心点位置         | Lnglat                                | -      |
 | showLnglat | 是否显示经纬度信息 | boolean                               | true   |
