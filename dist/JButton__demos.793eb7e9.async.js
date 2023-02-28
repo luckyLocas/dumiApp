@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkjad_quick=self.webpackChunkjad_quick||[]).push([[469],{94767:function(t,i,n){n.r(i);var e=n(67294),l=n(36730),u=n(85893);i.default=function(){return(0,u.jsxs)(u.Fragment,{children:[(0,u.jsx)(l.PU,{type:"link",children:"link \u6309\u94AE"}),(0,u.jsx)(l.PU,{type:"link",inline:!0,children:"inline \u6309\u94AE"})]})}}}]);

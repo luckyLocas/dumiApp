@@ -9,21 +9,27 @@
     "dist",
     "utils"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "father build",
     "dev": "dumi dev",
     "doc:build": "dumi build",
     "start": "npm run dev",
     "test": "father test",
+    "docs:deploy": "gh-pages -d dist",
     "test:coverage": "father test --coverage"
   },
-  "dependencies": {
+  "peerDependencies": {
+    "ant-design": "^1.0.0",
+    "antd": "^5.0.7",
     "@ant-design/icons": "^4.8.0",
     "@ant-design/pro-provider": "^2.2.0",
     "@ant-design/pro-table": "^3.2.7",
-    "@pansy/react-amap": "^2.15.3",
-    "ant-design": "^1.0.0",
-    "antd": "^5.0.7",
+    "@pansy/react-amap": "^2.15.3"
+  },
+  "dependencies": {
     "gcoord": "^0.3.2",
     "react-resizable": "^3.0.4",
     "styled-components": "^6.0.0-beta.6",
@@ -35,6 +41,7 @@
     "@types/react-resizable": "^3.0.3",
     "dumi": "^2.0.2",
     "father": "^4.1.1",
+    "gh-pages": "^5.0.0",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1"
   },
